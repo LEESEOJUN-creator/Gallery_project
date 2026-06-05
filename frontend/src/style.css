@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f5f7fb; color: #222; }
+button { cursor: pointer; border: 0; border-radius: 8px; padding: 9px 14px; background: #315fba; color: white; font-weight: 700; }
+button:hover { opacity: 0.9; }
+input, textarea { width: 100%; padding: 10px; border: 1px solid #c8d0de; border-radius: 8px; margin: 7px 0 12px; font-size: 15px; }
+textarea { min-height: 110px; resize: vertical; }
+.topbar { display: flex; justify-content: space-between; align-items: center; padding: 18px 28px; background: #173b79; color: white; }
+.topbar h1 { margin: 0; font-size: 24px; cursor: pointer; }
+.topbar nav { display: flex; gap: 8px; align-items: center; }
+.topbar button { background: #ffffff; color: #173b79; }
+.user { margin-left: 8px; font-weight: 700; }
+.notice { margin: 18px auto 0; max-width: 1080px; padding: 12px 16px; background: #fff4cc; border: 1px solid #ecd06d; border-radius: 8px; }
+.layout { max-width: 1180px; margin: 22px auto; display: flex; gap: 22px; padding: 0 18px; }
+.panel { background: white; border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,.08); padding: 20px; }
+.page { max-width: 1100px; margin: 22px auto; }
+.grow { flex: 1; }
+.user-list { list-style: none; padding: 0; margin: 0; min-width: 180px; }
+.user-list li { padding: 9px 0; border-bottom: 1px solid #edf0f5; }
+.info { color: #555; background: #eef3ff; border-radius: 8px; padding: 12px; }
+.search { display: flex; gap: 8px; margin-bottom: 18px; }
+.search input { margin: 0; }
+.search button { min-width: 95px; }
+.photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; }
+.photo-card { border: 1px solid #dfe5ef; border-radius: 12px; overflow: hidden; background: #fff; }
+.photo-card img { width: 100%; height: 190px; object-fit: cover; display: block; background: #eee; }
+.card-body { padding: 13px; }
+.card-body p { margin: 7px 0; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.form-card { max-width: 520px; margin: 28px auto; background: white; border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,.08); padding: 24px; }
+.message { border: 1px solid #dfe5ef; border-radius: 10px; padding: 14px; margin: 12px 0; background: #fbfcff; }
+.message button { margin-right: 8px; }
+.small { color: #666; font-size: 13px; }
+@media (max-width: 760px) {
+  .layout { flex-direction: column; }
+  .topbar { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .topbar nav { flex-wrap: wrap; }
+}

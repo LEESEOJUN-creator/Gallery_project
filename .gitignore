@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python virtual environment
+venv/
+backend/venv/
+
+# SQLite database generated during local testing
+backend/gallery.db
+*.db
+
+# Uploaded user files generated during testing
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# React dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Environment files
+.env
+
+# Editor / OS files
+.vscode/
+.DS_Store
+Thumbs.db
