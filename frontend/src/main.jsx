@@ -250,10 +250,11 @@ function App() {
   async function handleUpload(e) {
     e.preventDefault();
     if (!user) { show('로그인이 필요합니다.', 'error'); setView('signin'); return; }
-    const form = new FormData(e.currentTarget);
+    const formEl = e.currentTarget;
+    const form = new FormData(formEl);
     try {
       await request('/api/photos', { method: 'POST', body: form });
-      e.currentTarget.reset();
+      formEl.reset();
       setView('home');
       show('사진이 업로드되었습니다.');
       await loadPhotos();
